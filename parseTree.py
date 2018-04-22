@@ -16,7 +16,6 @@ def buildParseTree(fpexp):
                 fplist.append(chr)
     else:
         fplist = fpexp.split()
-    print(fplist)
     pStack = Stack()
     eTree = BinaryTree('')
     pStack.push(eTree)
