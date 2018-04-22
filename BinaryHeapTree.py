@@ -5,10 +5,6 @@ one at a time.
 2) Using the list from the previous question, show the binary heap tree resulting
 from the list as a parameter to the buildHeap method.  
 Show both the tree and list form.
-3) Extend the buildParseTree function to handle mathematical expressions that do not
-have spaces between every character.
-4) Extend the buildParseTree and evaluate functions to handle boolean statements.
-Remember that "not" is a unary operator, so this will complicate your code somewhat.
 '''
 
 import math
@@ -74,7 +70,10 @@ class BinHeap:
         
     def displayHeapList(self):
         print(self.heapList)
-    
+ 
+ # To show the list as a tree, I based this algorithm off of pythons heapq showTree algorithm, which can be found here:
+ # https://pymotw.com/2/heapq/
+ 
     def showTree(self):
         tree = self.heapList
         total_width=36
